@@ -79,3 +79,13 @@ button:hover {
 #downloadBtn:hover {
     background: #1e7e34;
 }
+
+footer {
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 67px;
+}
