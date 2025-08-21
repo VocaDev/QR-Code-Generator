@@ -91,23 +91,24 @@ footer {
 }
 
 /* Mobile-specific fix for very small screens */
-@media (max-width: 320px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+@media only screen and (max-width: 768px) 
+    and (max-width: 480px) {
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-  main {
-    flex: 1;
-    padding-bottom: 80px; /* Add enough space for footer height */
-  }
+        main {
+            flex: 1;
+            padding-bottom: 80px; /* Add enough space for footer height */
+        }
 
-  footer {
-    position: relative; /* Make sure it’s not absolute/fixed */
-  }
+        footer {
+            position: relative; /* Make sure it’s not absolute/fixed */
+        }
 
-  #qrText {
-    width: 200px;
-  }
+        #qrText {
+            width: 200px;
+        }
 }
