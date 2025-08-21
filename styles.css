@@ -89,3 +89,25 @@ footer {
   justify-content: center;
   margin-top: 67px;
 }
+
+/* Mobile-specific fix for very small screens */
+@media (max-width: 320px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
+    padding-bottom: 80px; /* Add enough space for footer height */
+  }
+
+  footer {
+    position: relative; /* Make sure it’s not absolute/fixed */
+  }
+
+  #qrText {
+    width: 200px;
+  }
+}
